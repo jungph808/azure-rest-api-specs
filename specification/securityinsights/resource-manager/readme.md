@@ -26,17 +26,41 @@ These are the global settings for the SecurityInsights API.
 
 ``` yaml
 openapi-type: arm
-tag: package-preview-2021-10
+tag: package-preview-2022-04
 ```
 
 ---
 
 
+### Tag: package-preview-2022-04
+
+These settings apply only when `--tag=package-preview-2022-04` is specified on the command line.
+
+```yaml $(tag) == 'package-preview-2022-04'
+input-file:
+  - Microsoft.SecurityInsights/preview/2022-04-01/AlertRules.json
+  - Microsoft.SecurityInsights/preview/2022-04-01/AutomationRules.json
+  - Microsoft.SecurityInsights/preview/2022-04-01/Bookmarks.json
+  - Microsoft.SecurityInsights/preview/2022-04-01/Enrichment.json
+  - Microsoft.SecurityInsights/preview/2022-04-01/Entities.json
+  - Microsoft.SecurityInsights/preview/2022-04-01/EntityQueries.json
+  - Microsoft.SecurityInsights/preview/2022-04-01/EntityQueryTemplates.json
+  - Microsoft.SecurityInsights/preview/2022-04-01/Incidents.json
+  - Microsoft.SecurityInsights/preview/2022-04-01/Metadata.json
+  - Microsoft.SecurityInsights/preview/2022-04-01/OfficeConsents.json
+  - Microsoft.SecurityInsights/preview/2022-04-01/OnboardingStates.json
+  - Microsoft.SecurityInsights/preview/2022-04-01/Settings.json
+  - Microsoft.SecurityInsights/preview/2022-04-01/SourceControls.json
+  - Microsoft.SecurityInsights/preview/2022-04-01/ThreatIntelligence.json
+  - Microsoft.SecurityInsights/preview/2022-04-01/Watchlists.json
+  - Microsoft.SecurityInsights/preview/2022-04-01/dataConnectors.json
+  - Microsoft.SecurityInsights/preview/2022-04-01/operations.json
+```
 ### Tag: package-preview-2021-10
 
 These settings apply only when `--tag=package-preview-2021-10` is specified on the command line.
 
-```yaml $(tag) == 'package-preview-2021-10'
+``` yaml $(tag) == 'package-preview-2021-10'
 input-file:
   - Microsoft.SecurityInsights/preview/2021-10-01-preview/AlertRules.json
   - Microsoft.SecurityInsights/preview/2021-10-01-preview/AutomationRules.json
@@ -56,6 +80,7 @@ input-file:
   - Microsoft.SecurityInsights/preview/2021-10-01-preview/dataConnectors.json
   - Microsoft.SecurityInsights/preview/2021-10-01-preview/operations.json
 ```
+
 ### Tag: package-preview-2021-09
 
 These settings apply only when `--tag=package-preview-2021-09` is specified on the command line.
@@ -87,7 +112,7 @@ input-file:
 
 These settings apply only when `--tag=package-2021-10` is specified on the command line.
 
-```yaml $(tag) == 'package-2021-10'
+``` yaml $(tag) == 'package-2021-10'
 input-file:
   - Microsoft.SecurityInsights/stable/2021-10-01/Incidents.json
   - Microsoft.SecurityInsights/stable/2021-10-01/ThreatIntelligence.json
